@@ -1,0 +1,48 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/ + https://registry.npmjs.org/ + https://github.com/moonshine-ai
+packages:
+- language: python
+  registry: pypi
+  name: moonshine-voice
+  url: https://pypi.org/project/moonshine-voice/
+  install: pip install moonshine-voice
+  official: true
+  notes: Current first-party Python SDK (author Moonshine AI); on-device STT, TTS,
+    intent recognition; MIT; also installs the moonshine-voice / moonshine CLI.
+- language: python
+  registry: pypi
+  name: useful-moonshine
+  url: https://pypi.org/project/useful-moonshine/
+  install: pip install useful-moonshine
+  official: true
+  notes: Legacy Useful Sensors-era package (Keras models); superseded by moonshine-voice.
+- language: python
+  registry: pypi
+  name: useful-moonshine-onnx
+  url: https://pypi.org/project/useful-moonshine-onnx/
+  install: pip install useful-moonshine-onnx
+  official: true
+  notes: Legacy Useful Sensors-era package for the Moonshine ONNX models.
+- language: javascript
+  registry: npm
+  name: '@moonshine-ai/moonshine-js'
+  url: https://www.npmjs.com/package/@moonshine-ai/moonshine-js
+  install: npm install @moonshine-ai/moonshine-js
+  official: true
+  notes: Current first-party in-browser JS SDK for on-device speech-to-text and voice
+    control; docs at https://dev.moonshine.ai/#js.
+- language: javascript
+  registry: npm
+  name: '@usefulsensors/moonshine-js'
+  url: https://www.npmjs.com/package/@usefulsensors/moonshine-js
+  install: npm install @usefulsensors/moonshine-js
+  official: true
+  notes: Legacy scope of the same JS SDK from before the Moonshine AI rebrand.
+- language: swift
+  registry: swift-package-manager
+  name: moonshine-swift
+  url: https://github.com/moonshine-ai/moonshine-swift
+  install: 'Add package dependency: https://github.com/moonshine-ai/moonshine-swift'
+  official: true
+  notes: Swift Package Manager distribution of Moonshine for iOS/macOS.

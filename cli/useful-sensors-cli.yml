@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: searched
+source: https://raw.githubusercontent.com/moonshine-ai/moonshine/main/python/pyproject.toml
+  + python/src/moonshine_voice/cli.py
+name: moonshine-voice
+aliases:
+- moonshine
+package: moonshine-voice (PyPI)
+install:
+- method: pip
+  command: pip install moonshine-voice
+description: First-party console entry point installed with the moonshine-voice Python
+  package ([project.scripts] in pyproject.toml). A thin dispatcher — each subcommand
+  runs the corresponding module's demo, so 'moonshine-voice mic --language en' equals
+  'python -m moonshine_voice.mic_transcriber --language en'.
+commands:
+- command: mic
+  module: moonshine_voice.mic_transcriber
+  summary: Transcribe live microphone input to the terminal.
+- command: transcribe
+  module: moonshine_voice.transcriber
+  summary: Transcribe a WAV file (with optional speaker IDs / word timestamps).
+- command: tts
+  module: moonshine_voice.tts
+  summary: Synthesize speech from text to a WAV file or audio device.
+- command: intent
+  module: moonshine_voice.intent_recognizer
+  summary: Recognize spoken intents from the mic or a WAV file.
+- command: download
+  module: moonshine_voice.download
+  summary: Download STT, TTS, G2P, or intent model assets.
+- command: g2p
+  module: moonshine_voice.g2p
+  summary: Convert text to phonemes (IPA) with the G2P engine.
+global_options:
+- flag: -h, --help
+  summary: Show help and exit.
+- flag: -V, --version
+  summary: Show the moonshine-voice version and exit.

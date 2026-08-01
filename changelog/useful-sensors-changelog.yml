@@ -1,0 +1,33 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/moonshine-ai/moonshine/releases
+scheme: semver (v0.0.x tags on GitHub releases; releases carry version tags and dates,
+  no prose release notes)
+current_version: v0.0.69
+entries:
+- version: v0.0.69
+  date: '2026-07-16'
+- version: v0.0.68
+  date: '2026-07-11'
+- version: v0.0.67
+  date: '2026-07-10'
+- version: v0.0.66
+  date: '2026-07-10'
+- version: v0.0.65
+  date: '2026-07-03'
+- version: v0.0.63
+  date: '2026-07-01'
+- version: v0.0.62
+  date: '2026-06-02'
+- version: v0.0.61
+  date: '2026-05-30'
+- version: v0.0.59
+  date: '2026-04-20'
+- version: v0.0.56
+  date: '2026-04-14'
+- version: v0.0.52
+  date: '2026-04-07'
+- version: v0.0.51
+  date: '2026-03-16'
+notes: Release cadence for the Moonshine voice library (STT/TTS/intent). Bodies are
+  boilerplate ('Release vX.Y.Z'), so no per-release highlights are published to capture.

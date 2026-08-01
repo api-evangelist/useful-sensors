@@ -1,8 +1,25 @@
 aid: useful-sensors
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/useful-sensors.png
 name: Useful Sensors
-description: 'Useful Sensors is a company surfaced as a portfolio company of amplify-partners, bloomberg-beta,
-  homebrew and added to the API Evangelist network as a stub for enrichment. Sector: ai-ml. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'Useful Sensors, now operating as Moonshine AI, builds fast, low-resource,
+  private-by-design AI that runs entirely on-device. Founded by former Google TensorFlow
+  leads Pete Warden (CEO) and Manjunath Kudlur (CTO), the company started with plug-and-play
+  hardware like the Person Sensor and Tiny Code Reader and now ships Moonshine, an
+  MIT-licensed family of low-latency speech-to-text, text-to-speech, and intent-recognition
+  models with SDKs for in-browser JavaScript, server-side Python, and C++ on edge
+  devices. There is no hosted cloud API — all speech processing happens locally on
+  the device.'
 url: https://raw.githubusercontent.com/api-evangelist/useful-sensors/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +29,24 @@ x-backed-by:
 - homebrew
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai Ml
+- Speech To Text
+- Text To Speech
+- Voice
+- Edge AI
+- On-Device AI
+- Machine Learning
+- Open Source
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +54,29 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/useful-sensors-domain-security.yml
 - type: Website
   url: https://usefulsensors.com
+- type: Website
+  url: https://moonshine.ai
+- type: DeveloperPortal
+  url: https://dev.moonshine.ai/
+- type: Documentation
+  url: https://dev.moonshine.ai/
+- type: GettingStarted
+  url: https://github.com/moonshine-ai/moonshine?tab=readme-ov-file#quickstart
+- type: GitHubOrganization
+  url: https://github.com/moonshine-ai
+- type: Support
+  url: https://discord.gg/27qp9zSRXF
+- type: Packages
+  url: packages/useful-sensors-packages.yml
+- type: SDKs
+  url: packages/useful-sensors-packages.yml
+- type: CLI
+  url: cli/useful-sensors-cli.yml
+- type: ChangeLog
+  url: changelog/useful-sensors-changelog.yml
+- type: LLMsTxt
+  url: llms/useful-sensors-llms.txt

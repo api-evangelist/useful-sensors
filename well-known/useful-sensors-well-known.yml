@@ -1,0 +1,41 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes 2026-07-21
+hosts:
+- host: https://usefulsensors.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://moonshine.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://dev.moonshine.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /llms.txt
+    status: 404
+notes: No /.well-known/ discovery surface published on any Useful Sensors / Moonshine
+  AI host as of the probe date. Recorded as honest negative results; no WellKnown
+  pointer is wired in apis.yml because no document exists.
