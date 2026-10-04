@@ -58,8 +58,8 @@ tags:
 - Voice
 - Edge AI
 - On-Device AI
-- Machine-Learning
-- Open-Source
+- Machine Learning
+- Open Source
 tags_raw:
 - Company
 - Ai Ml
@@ -70,6 +70,8 @@ tags_raw:
 - On-Device AI
 - Machine Learning
 - Open Source
+- Machine-Learning
+- Open-Source
 apis: []
 maintainers:
 - FN: Kin Lane
